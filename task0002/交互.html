@@ -15,7 +15,6 @@
             padding-left: 100px;
             position: relative;
         }
-
         .img-box {
             width: 300px;
             height: 200px;
@@ -25,15 +24,19 @@
         }
         .btn1 {
             width: 240px;
+            background-image:url("xx.jpeg");
             height: 49px;
             float: right;
+            display:block;
         }
         .btn2 {
             width: 240px;
+            background-image:url("bw.jpeg");
             height: 49px;
             float: right;
             margin-top: 60px;
             margin-right: 0;
+            display:block;
         }
     </style>
 </head>
@@ -43,9 +46,9 @@
     <img id="img" src="xx.png">
 </div>
 <div class="btn-box">
-    <button id="xx" class="btn1">小新
+    <button id="xx" class="btn1" style='background-image(url(xx.jpeg)' onmouseover="this.style.backgroundImage='url(bw.jpeg)'" onmouseout="this.style.backgroundImage='url(xx.jpeg)'">小新
     </button>
-    <button id="bw" class="btn2" >巴图
+    <button id="bw" class="btn2" style='background-image(url(xx.jpeg)' onmouseover="this.style.backgroundImage='url(bw.jpeg)'" onmouseout="this.style.backgroundImage='url(xx.jpeg)'">巴图
     </button>
 </div>
 </body>
