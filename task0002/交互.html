@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交互</title>
+    <style>
+        .btn-box {
+            margin-top: 100px;
+            width: 500px;
+            width: 300px;
+            float: right;
+            margin-right: 0;
+            padding-top: 69px;
+            padding-right: 60px;
+            padding-left: 100px;
+            position: relative;
+        }
+
+        .img-box {
+            width: 300px;
+            height: 200px;
+            margin-left: 200px;
+            float: left;
+            position: absolute;
+        }
+        .btn1 {
+            width: 240px;
+            height: 49px;
+            float: right;
+        }
+        .btn2 {
+            width: 240px;
+            height: 49px;
+            float: right;
+            margin-top: 60px;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<img id="img2" src="xx.jpg" style="position: absolute">
+<div class="img-box">
+    <img id="img" src="xx.png">
+</div>
+<div class="btn-box">
+    <button id="xx" class="btn1">小新
+    </button>
+    <button id="bw" class="btn2" >巴图
+    </button>
+</div>
+</body>
+<script>
+    var btns=document.getElementsByTagName("button");
+    var img=document.getElementById("img");
+    var img2=document.getElementById("img2");
+    function SwitchPicture(id){
+        img.setAttribute("src",""+id+".png")
+        img2.setAttribute("src",""+id+".jpg")
+    }
+    for(var i=0;i<btns.length;i++) {
+        btns[i].onclick = function () {
+            var id = this.id;
+            SwitchPicture(id);
+        }
+    }
+</script>
+</html>
