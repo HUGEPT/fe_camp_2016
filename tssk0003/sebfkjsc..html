@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            background: url("beijin.jpg") no-repeat fixed;
+            overflow:auto;
+        }
+        #box{height:100px;width:100%;border-radius:6px;margin:0 auto;padding-top: 10px}
+        a{text-decoration:none;}
+        .top{height:60px; background: url(top.jpg) fixed; display: block ;background-size: cover}
+        .top a{height:60px;width:60px;display:block;float: right }
+        .btn-jiben-off {background:url(jiben.png) no-repeat}
+        .btn-xiangxi-on {background:url(xiangxi.png) no-repeat}
+        #box ul li {
+            height:400px;
+            display: block;
+            width: 600px;
+            float: left ;
+            margin-top: 10px;
+            margin-left: 20px;
+            border: 2px #05e1da solid;
+            padding-top: 10px;
+        }
+        .span1{
+            top: 30px;
+            position:absolute;
+            font-style: inherit;
+            color:  blanchedalmond;
+            font-size: xx-large ;
+            font-kerning: auto;
+        }
+        .span2{
+            display: block ;
+            padding-top: 60px;
+            font-size: small;
+            color: #81c9e1;
+        }
+        .span3 {
+            font-size: x-large;
+            color: darkslategrey ;
+        }
+        .span4 {
+            font-size:x-large;
+        }
+        .img {
+            display: block ;
+            float: right ;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="box" class="title-box">
+    <span class="span1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MY INFORMATION</span>
+   <div class="top">
+       <a href="#" title="基本信息" class="btn-jiben-off">
+           <span class="span2">&nbsp;基本信息</span>
+       </a>
+       <a href="#" title="详细信息" class="btn-xiangxi-on">
+           <span class="span2">&nbsp;详细信息</span>
+       </a>
+   </div>
+<ul class="ul">
+    <li class="li" style="background: url(1.jpeg) +160px +0px">
+        <span style="font-size: x-large;color: #7c36e1">
+            基础信息
+        </span>
+        <img src="jiben.png" class="img">
+        <p>
+            <span class="span3">姓名：</span>
+            <span class="span4">蔡&nbsp;奇</span>
+        </p>
+        <p>
+            <span class="span3">年龄：</span>
+            <span class="span4">&nbsp;19</span>
+        </p>
+        <p>
+            <span class="span3">籍贯：</span>
+            <span class="span4">陕西省商洛市镇安县</span>
+        </p>
+        <p>
+            <span class="span3">联系电话：</span>
+            <span class="span4">15549044696</span>
+        </p>
+        <p>
+            <span class="span3">身高：</span>
+            <span class="span4">170cm</span>
+        </p>
+        <p>
+            <span class="span3">籍贯：</span>
+            <span class="span4">陕西省商洛市镇安县</span>
+        </p>
+        <p>
+            <span class="span3">健康状况：</span>
+            <span class="span4">健康</span>
+        </p>
+        <p>
+            <span class="span3">学历：</span>
+            <span class="span4">本科ing</span>
+        </p>
+    </li>
+    <li class="li"style="background: url(2.jpeg)" >
+        <span style="font-size: x-large;color: #7c36e1">
+            教育信息
+        </span>
+        <p>
+            <span class="span3">：</span>
+            <span class="span4">本科ing</span>
+        </p>
+        <p>
+            <span class="span3">学历：</span>
+            <span class="span4">本科ing</span>
+        </p>
+        <p>
+            <span class="span3">小学：</span>
+            <span class="span4">2003起（水峡小学）</span>
+        </p>
+        <p>
+            <span class="span3">初中：</span>
+            <span class="span4">熨斗中学</span>
+        </p>
+        <p>
+            <span class="span3">高中：</span>
+            <span class="span4">镇安中学</span>
+        </p>
+        <p>
+            <span class="span3">大学：</span>
+            <span class="span4">AT HERE</span>
+        </p>
+        <p>
+            <span class="span3">是否留级休学：</span>
+            <span class="span4">否</span>
+        </p>
+    </li>
+    <li class="li"style="background: url(3.jpeg)" >
+        <span style="font-size: x-large;color: #7c36e1">
+            实习经历
+        </span>
+        <p>
+            <span class="span4">你</span>
+        </p>
+        <p>
+            <span class="span4">肯</span>
+        </p>
+        <p>
+            <span class="span4">定</span>
+        </p>
+        <p>
+            <span class="span4">在</span>
+        </p>
+        <p>
+            <span class="span4">逗</span>
+        </p>
+        <p>
+            <span class="span3">我</span>
+        </p>
+    </li>
+    <li style="background: url(4.jpeg)">
+        <span style="font-size: x-large;color: #7c36e1">
+            项目经验
+        </span>
+        <p><span class="span3">神尴尬<br>我高一<br>真的没有呀<br>好方啊</span></p>
+    </li>
+</ul>
+</div>
+</body>
+<script>
+ var button=document.getElementById("#");
+ button.onclick=function(){
+     alert("还没做好呀");
+ }
+</script>
+</html>
